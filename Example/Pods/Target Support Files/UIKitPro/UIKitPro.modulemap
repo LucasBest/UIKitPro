@@ -1,0 +1,6 @@
+framework module UIKitPro {
+  umbrella header "UIKitPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

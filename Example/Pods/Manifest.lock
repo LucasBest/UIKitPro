@@ -1,0 +1,19 @@
+PODS:
+  - PinCushion (0.4.0)
+  - UIKitPro (0.1.0):
+    - PinCushion
+
+DEPENDENCIES:
+  - UIKitPro (from `../`)
+
+EXTERNAL SOURCES:
+  UIKitPro:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PinCushion: a868b7492f4ab62c3cd9cc0d670b1396b9bcb57b
+  UIKitPro: d7a39087affa88b80f07368599862a8fb45a4d8a
+
+PODFILE CHECKSUM: 932cdf752ab040e44d2eec456ef7a838f4532476
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module PinCushion {
+  umbrella header "PinCushion-umbrella.h"
+
+  export *
+  module * { export * }
+}
