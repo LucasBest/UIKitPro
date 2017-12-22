@@ -14,6 +14,7 @@
 		5F43C1E4A58812D1A897494769BF6FBC /* Pods-UIKitPro_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3EB70E33B5ACA7F29A296C3D6F7BD3F /* Pods-UIKitPro_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C77645D74AA9B398302CD3D14B8E219 /* PinCushion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 610491EA9E17FC11ACA524A5A260B728 /* PinCushion-dummy.m */; };
 		7E932ECBEC1549C15B84AF72EBFA797D /* Pods-UIKitPro_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8022FA4878FFB63B2DD8690DD4106F /* Pods-UIKitPro_Example-dummy.m */; };
+		9C47F4821FEC82D4004A93BD /* UIView+SubviewManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C47F4811FEC82D4004A93BD /* UIView+SubviewManagement.swift */; };
 		9CB75D331FDB7533009E9B33 /* UIResponder+NextFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB75D321FDB7533009E9B33 /* UIResponder+NextFocus.swift */; };
 		9CB75D371FDB7C2E009E9B33 /* UIViewController+TapOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB75D361FDB7C2E009E9B33 /* UIViewController+TapOut.swift */; };
 		9CB75D391FDB7C44009E9B33 /* UIViewController+PresentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB75D381FDB7C44009E9B33 /* UIViewController+PresentAlert.swift */; };
@@ -83,6 +84,7 @@
 		942BF99913AA6F1F8F61492DCE338BEA /* Pods-UIKitPro_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIKitPro_Tests.modulemap"; sourceTree = "<group>"; };
 		989C607B2FCE81E7A9FAFCE985251147 /* Pods-UIKitPro_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B221C14EA129B313382E1B2142BB214 /* PinCushion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinCushion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C47F4811FEC82D4004A93BD /* UIView+SubviewManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+SubviewManagement.swift"; path = "UIKitPro/Classes/UIView+SubviewManagement.swift"; sourceTree = "<group>"; };
 		9CB75D321FDB7533009E9B33 /* UIResponder+NextFocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIResponder+NextFocus.swift"; path = "UIKitPro/Classes/UIResponder+NextFocus.swift"; sourceTree = "<group>"; };
 		9CB75D361FDB7C2E009E9B33 /* UIViewController+TapOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TapOut.swift"; sourceTree = "<group>"; };
 		9CB75D381FDB7C44009E9B33 /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				9CEE2C971FD9B49600F1A176 /* UIImage+Color.swift */,
 				9CB75D321FDB7533009E9B33 /* UIResponder+NextFocus.swift */,
 				9CD5C8981FDC3C6000CC700C /* Array+RemoveEquatable.swift */,
+				9C47F4811FEC82D4004A93BD /* UIView+SubviewManagement.swift */,
 				9CB75D351FDB7C2E009E9B33 /* View Controller Extensions */,
 				9CEE2C8A1FD9AFA200F1A176 /* RootViewControllerAnimatedTransitioning */,
 				F8DD7DC6A433AD0D79F038FDDE619B71 /* Support Files */,
@@ -501,6 +504,7 @@
 				9CEE2C8D1FD9AFA200F1A176 /* UIWindow+AnimateRootViewController.swift in Sources */,
 				9CEE2C8E1FD9AFA200F1A176 /* RootViewControllerAnimatedSegue.swift in Sources */,
 				9CB75D391FDB7C44009E9B33 /* UIViewController+PresentAlert.swift in Sources */,
+				9C47F4821FEC82D4004A93BD /* UIView+SubviewManagement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
