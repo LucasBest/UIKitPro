@@ -10,7 +10,7 @@ import UIKit
 public extension UIView{
     
     @discardableResult
-    func pin(target:Any? = nil, _ targetAttribute:NSLayoutAttribute, to destination:Any? = nil, _ destinationAttribute:NSLayoutAttribute = .notAnAttribute, _ relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0) -> (addedToView:UIView, constraint:NSLayoutConstraint){
+    func pin(target:Any? = nil, _ targetAttribute:NSLayoutAttribute, to destination:Any? = nil, _ destinationAttribute:NSLayoutAttribute = .notAnAttribute, _ relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> (addedToView:UIView, constraint:NSLayoutConstraint){
         
         if PinCushion.debugOptions.contains(.warnTranslatesAutoResizeMaskIntoConstraints) && self.translatesAutoresizingMaskIntoConstraints{
             print("Warning: pinning view (", self, ") with .translatesAutoresizingMaskIntoConstraints set to true, constraints may conflict.")
@@ -23,7 +23,9 @@ public extension UIView{
         var constraintView:UIView = self
         
         if let targetView = (constraintTarget as? UIView), let destinationView = destination as? UIView{
-            targetView.translatesAutoresizingMaskIntoConstraints = false
+            if automaticallySetTranslatesAutoresizingMaskIntoConstraints{
+                targetView.translatesAutoresizingMaskIntoConstraints = false
+            }
             
             if let commonSuperview = targetView.commonSuperviewWith(destinationView){
                 constraintView = commonSuperview
@@ -34,7 +36,10 @@ public extension UIView{
             }
         }
         else{
-            self.translatesAutoresizingMaskIntoConstraints = false
+            if automaticallySetTranslatesAutoresizingMaskIntoConstraints{
+                self.translatesAutoresizingMaskIntoConstraints = false
+            }
+            
             self.addConstraint(constraint)
         }
         
@@ -42,7 +47,7 @@ public extension UIView{
     }
     
     @discardableResult
-    func pinInSuperview(_ attrubutes:[NSLayoutAttribute], relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0) -> [NSLayoutAttribute : NSLayoutConstraint]{
+    func pinInSuperview(_ attrubutes:[NSLayoutAttribute], relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> [NSLayoutAttribute : NSLayoutConstraint]{
         if PinCushion.debugOptions.contains(.warnViewHasNoSuperview) && self.superview == nil{
             print("Warning: attempt to pin view to its superview when superview is nil, constraint will be added to self instead.")
         }
@@ -52,9 +57,10 @@ public extension UIView{
         for attrubute in attrubutes{
             switch attrubute{
             case .trailing, .trailingMargin, .left, .leftMargin, .bottom, .bottomMargin:
-                constraints[attrubute] =  self.superview?.pin(attrubute, to: self, attrubute, relation, multiplier: multiplier, constant: constant).constraint
+                constraints[attrubute] =  self.superview?.pin(attrubute, to: self, attrubute, relation, multiplier: multiplier, constant: constant, automaticallySetTranslatesAutoresizingMaskIntoConstraints:automaticallySetTranslatesAutoresizingMaskIntoConstraints).constraint
             default:
-                constraints[attrubute] =  self.pin(attrubute, to: self.superview, attrubute, relation, multiplier: multiplier, constant: constant).constraint
+                constraints[attrubute] =  self.pin(attrubute, to: self.superview, attrubute, relation, multiplier: multiplier, constant: constant, automaticallySetTranslatesAutoresizingMaskIntoConstraints:
+                    automaticallySetTranslatesAutoresizingMaskIntoConstraints).constraint
             }
         }
         

@@ -15,7 +15,7 @@ public extension UIWindow{
             
             if let realSnapShot = snapshot{
                 rootViewController.view.addSubview(realSnapShot)
-                realSnapShot.pinInSuperview([.leading, .top, .trailing, .bottom])
+                realSnapShot.pinInSuperview([.leading, .top, .trailing, .bottom], automaticallySetTranslatesAutoresizingMaskIntoConstraints:false)
             }
             
             self.rootViewController = rootViewController
