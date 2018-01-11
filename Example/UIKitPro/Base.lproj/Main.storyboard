@@ -1,25 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller1-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController1" customModule="UIKitPro_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bev-rv-zFX">
+                                <rect key="frame" x="122.5" y="323" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZo-ex-6mc">
+                                <rect key="frame" x="130" y="444" width="114" height="30"/>
+                                <state key="normal" title="ViewController 2"/>
+                                <connections>
+                                    <action selector="toViewController2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jb1-Wn-S7J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bev-rv-zFX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0tF-kT-OSk"/>
+                            <constraint firstItem="Bev-rv-zFX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Mrl-fA-bZ6"/>
+                            <constraint firstItem="FZo-ex-6mc" firstAttribute="top" secondItem="Bev-rv-zFX" secondAttribute="bottom" constant="100" id="dS2-GG-zNl"/>
+                            <constraint firstItem="FZo-ex-6mc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dvE-XN-SVC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="076-yp-o3z" kind="custom" identifier="toViewController2" customClass="RootViewControllerAnimatedSegue" customModule="UIKitPro" id="CdN-T5-lMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="70" y="29"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="DT6-nD-RMv">
+            <objects>
+                <viewController id="076-yp-o3z" customClass="ViewController2" customModule="UIKitPro_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lhv-cw-6hI"/>
+                        <viewControllerLayoutGuide type="bottom" id="nD7-mE-8EX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="weH-JQ-g42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYb-5C-e9c">
+                                <rect key="frame" x="121.5" y="223" width="131.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQV-74-UDh">
+                                <rect key="frame" x="131" y="344" width="112" height="30"/>
+                                <state key="normal" title="ViewController 1"/>
+                                <connections>
+                                    <action selector="goBack:" destination="076-yp-o3z" eventType="touchUpInside" id="L8Z-x0-oMn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.35351653690000001" blue="0.24474059270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQV-74-UDh" firstAttribute="centerX" secondItem="weH-JQ-g42" secondAttribute="centerX" id="ZKr-Et-I2a"/>
+                            <constraint firstItem="mYb-5C-e9c" firstAttribute="centerX" secondItem="weH-JQ-g42" secondAttribute="centerX" id="fFA-YV-dmF"/>
+                            <constraint firstItem="mYb-5C-e9c" firstAttribute="centerY" secondItem="weH-JQ-g42" secondAttribute="centerY" multiplier="0.7" id="sbW-EV-0ke"/>
+                            <constraint firstItem="HQV-74-UDh" firstAttribute="top" secondItem="mYb-5C-e9c" secondAttribute="bottom" constant="100" id="smc-23-6fm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="toViewController1" customClass="RootViewControllerAnimatedSegue" customModule="UIKitPro" id="A42-VS-OFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7d-9o-uBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="30"/>
         </scene>
     </scenes>
 </document>

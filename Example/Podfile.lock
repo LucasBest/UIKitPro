@@ -1,6 +1,6 @@
 PODS:
-  - PinCushion (1.0.0)
-  - UIKitPro (0.2.0):
+  - PinCushion (1.0.1)
+  - UIKitPro (0.3.0):
     - PinCushion
 
 DEPENDENCIES:
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PinCushion: b8b74e6446d302fa8e723112b0be05f735b75845
-  UIKitPro: 733077d453f665a6c19836b6d89b7edfc5629b13
+  PinCushion: e40c471ed7d7172421f212613ba0333e36a612da
+  UIKitPro: 8660b7b3171beb980fc27ed8580c25323786a169
 
 PODFILE CHECKSUM: 932cdf752ab040e44d2eec456ef7a838f4532476
 
