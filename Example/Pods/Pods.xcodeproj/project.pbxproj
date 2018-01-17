@@ -22,6 +22,7 @@
 		7924E5D95C51F9A5CAF88738AAFC5D45 /* UIViewController+PresentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380707716C376C915DFD6F60D81BC96 /* UIViewController+PresentAlert.swift */; };
 		7E932ECBEC1549C15B84AF72EBFA797D /* Pods-UIKitPro_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8022FA4878FFB63B2DD8690DD4106F /* Pods-UIKitPro_Example-dummy.m */; };
 		8DC8E60485210747702409AF928FD32A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48C9E586057A4043880E3D14F949F00 /* UIKit.framework */; };
+		9CE0D0B1200FB70A008A0B4E /* UITextField+PlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0D0B0200FB70A008A0B4E /* UITextField+PlaceholderColor.swift */; };
 		9DA96EE4466E93D21D5C5FF8C868DE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48C9E586057A4043880E3D14F949F00 /* UIKit.framework */; };
 		C161EF59BDB8F308440F6950569A0CBB /* UIKitPro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4391A1529E09E5D1DCCF42D4D3A8E1C /* UIKitPro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C558DD6C8BA36D5A6C279ECFCDF007B4 /* PinCushion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA19C019E40A59F1D51C1EE33F6A4B3 /* PinCushion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,14 +64,14 @@
 		0556F06B07E2CB8D6ED76388A6AF6F41 /* Pods-UIKitPro_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		21B34250F6E7AEFF72BDDE00533EF038 /* UIResponder+NextFocus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIResponder+NextFocus.swift"; path = "UIKitPro/Classes/UIResponder+NextFocus.swift"; sourceTree = "<group>"; };
 		2583242B174C3B2112B7AD86314110E6 /* Pods-UIKitPro_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKitPro_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		30BA207D1C4474FA7F53FBB7ACEA8EA5 /* PinCushion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinCushion.framework; path = PinCushion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BA207D1C4474FA7F53FBB7ACEA8EA5 /* PinCushion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinCushion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E4AE906674E85633A5207CFA425982 /* UIViewController+TapOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+TapOut.swift"; sourceTree = "<group>"; };
-		4397B0099717E7C00B5297F485FBFABF /* Pods_UIKitPro_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UIKitPro_Example.framework; path = "Pods-UIKitPro_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4397B0099717E7C00B5297F485FBFABF /* Pods_UIKitPro_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPro_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E8C03D85BA52809D676A4E3D3A37B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462D60DBF4F8716E8048C0DB9303107E /* Pods-UIKitPro_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKitPro_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		47AD206327157B44B007091B621323A6 /* PinCushion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinCushion.xcconfig; sourceTree = "<group>"; };
 		4B7B236644B2EAEB6539BBF114DD5C30 /* Array+RemoveEquatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+RemoveEquatable.swift"; path = "UIKitPro/Classes/Array+RemoveEquatable.swift"; sourceTree = "<group>"; };
-		532A3E19406AB15B30A8887AE9C57877 /* UIKitPro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIKitPro.modulemap; sourceTree = "<group>"; };
+		532A3E19406AB15B30A8887AE9C57877 /* UIKitPro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIKitPro.modulemap; sourceTree = "<group>"; };
 		57F0D5A212C30A6706D52970D05184FD /* Pods-UIKitPro_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKitPro_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5CA19C019E40A59F1D51C1EE33F6A4B3 /* PinCushion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinCushion-umbrella.h"; sourceTree = "<group>"; };
 		6375AF2ACFF29B556CCA913DE48BD98C /* Pods-UIKitPro_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKitPro_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -81,22 +82,23 @@
 		7B759F0FC71D91F344B94E339E0ABD7F /* UIWindow+AnimateRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIWindow+AnimateRootViewController.swift"; sourceTree = "<group>"; };
 		7F992E60A438016340C534287E73E389 /* RootViewControllerAnimatedSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewControllerAnimatedSegue.swift; sourceTree = "<group>"; };
 		812EFC5346CFFB3D3E8E2EFECA9D5756 /* UIImage+Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Color.swift"; path = "UIKitPro/Classes/UIImage+Color.swift"; sourceTree = "<group>"; };
-		8C80B7F56AB642A55B10227114B33855 /* UIKitPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIKitPro.framework; path = UIKitPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C80B7F56AB642A55B10227114B33855 /* UIKitPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8959128904E33CFCAD0B2C7640D4A6 /* Pods-UIKitPro_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA95885AB928081B9D9FA7CC9DB835E /* Pods-UIKitPro_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIKitPro_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		942BF99913AA6F1F8F61492DCE338BEA /* Pods-UIKitPro_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UIKitPro_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		942BF99913AA6F1F8F61492DCE338BEA /* Pods-UIKitPro_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIKitPro_Tests.modulemap"; sourceTree = "<group>"; };
 		989C607B2FCE81E7A9FAFCE985251147 /* Pods-UIKitPro_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99D4C4F9EE41B413174E4467F6A0ECBA /* UIKitPro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIKitPro-dummy.m"; sourceTree = "<group>"; };
 		9B221C14EA129B313382E1B2142BB214 /* PinCushion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinCushion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE0D0B0200FB70A008A0B4E /* UITextField+PlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITextField+PlaceholderColor.swift"; path = "UIKitPro/Classes/UITextField+PlaceholderColor.swift"; sourceTree = "<group>"; };
 		9DD4FF434D4B911CE6EC4F65B8536D98 /* Pods-UIKitPro_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKitPro_Example-resources.sh"; sourceTree = "<group>"; };
 		A380707716C376C915DFD6F60D81BC96 /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
 		A78AF9CFC5942B969B10C7C44741E1F6 /* UIView+LayerStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LayerStyle.swift"; path = "UIKitPro/Classes/UIView+LayerStyle.swift"; sourceTree = "<group>"; };
 		A87CE1CD05300FE745F7677756FA8BF8 /* UIKitPro.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIKitPro.xcconfig; sourceTree = "<group>"; };
 		B5D360DABB6C08AF5FE295B5D8C6E84E /* Pods-UIKitPro_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B83E2C962A7C6B57F619B6432D49B354 /* Pods-UIKitPro_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKitPro_Tests-resources.sh"; sourceTree = "<group>"; };
-		BE8B5592A9584D9243036D1E671EB2B5 /* Pods_UIKitPro_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UIKitPro_Tests.framework; path = "Pods-UIKitPro_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE9E7419096BB5195B15774E05B9E93B /* Pods-UIKitPro_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UIKitPro_Example.modulemap"; sourceTree = "<group>"; };
+		BE8B5592A9584D9243036D1E671EB2B5 /* Pods_UIKitPro_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPro_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9E7419096BB5195B15774E05B9E93B /* Pods-UIKitPro_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIKitPro_Example.modulemap"; sourceTree = "<group>"; };
 		BEE5DC1792D45130931786FFD5E880A0 /* Pods-UIKitPro_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BF9B1A9BBBEE9F3E1632054EBC624C22 /* Pods-UIKitPro_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4391A1529E09E5D1DCCF42D4D3A8E1C /* UIKitPro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPro-umbrella.h"; sourceTree = "<group>"; };
@@ -108,7 +110,7 @@
 		D62E8AE687ED8ECBDD65E775997AED12 /* PinCushion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinCushion-prefix.pch"; sourceTree = "<group>"; };
 		D6F85D6AC64256F3136622F120402876 /* PinCushion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinCushion-dummy.m"; sourceTree = "<group>"; };
 		DB8022FA4878FFB63B2DD8690DD4106F /* Pods-UIKitPro_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitPro_Example-dummy.m"; sourceTree = "<group>"; };
-		E93886BFE9DAB9AB16A1DFE4CF6790BB /* PinCushion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinCushion.modulemap; sourceTree = "<group>"; };
+		E93886BFE9DAB9AB16A1DFE4CF6790BB /* PinCushion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinCushion.modulemap; sourceTree = "<group>"; };
 		F00BE0F23FD7A18EAC9A68D416F3589C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE57F641E342C1E6FC761B48729F4C88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +189,6 @@
 				7224692BA3C9CDF39C690823B7E185C3 /* UIView+Pinning.swift */,
 				97C8FA3FE343EBB8E337740C32471823 /* Support Files */,
 			);
-			name = PinCushion;
 			path = PinCushion;
 			sourceTree = "<group>";
 		};
@@ -288,6 +289,7 @@
 				21B34250F6E7AEFF72BDDE00533EF038 /* UIResponder+NextFocus.swift */,
 				A78AF9CFC5942B969B10C7C44741E1F6 /* UIView+LayerStyle.swift */,
 				7B693661ECB9F09B3E5681777469822D /* UIView+SubviewManagement.swift */,
+				9CE0D0B0200FB70A008A0B4E /* UITextField+PlaceholderColor.swift */,
 				7FC8AD509218B9FCEE68D3EA4DA0100B /* RootViewControllerAnimatedTransitioning */,
 				D288B7B8357B5E0704803C20807231AB /* Support Files */,
 				EC2E2B53F7E7A6FEFF1EC26E844BEABF /* View Controller Extensions */,
@@ -489,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F890233F4AFB6897D178A60982F9C56 /* PinCushion-dummy.m in Sources */,
+				9CE0D0B1200FB70A008A0B4E /* UITextField+PlaceholderColor.swift in Sources */,
 				D151A8042876627C9D7C33E03F413580 /* PinCushion.swift in Sources */,
 				D824CDF87E39B4EF336BFD99A28F031B /* UIView+Pinning.swift in Sources */,
 			);
