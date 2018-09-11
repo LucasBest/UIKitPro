@@ -12,7 +12,7 @@ extension UIResponder{
         static var nextFocus = "nextFocus"
     }
     
-    @IBOutlet public var nextFocus:UIResponder?{
+    @IBOutlet open var nextFocus:UIResponder?{
         get{
             return objc_getAssociatedObject(self, &AssociatedKeys.nextFocus) as? UIResponder
         }

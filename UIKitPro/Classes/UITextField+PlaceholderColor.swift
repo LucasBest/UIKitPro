@@ -9,7 +9,7 @@ import UIKit
 
 @IBDesignable
 extension UITextField{
-    @IBInspectable var placeholderColor:UIColor{
+    @IBInspectable public var placeholderColor:UIColor{
         get{
             if let realAttributedPlaceholder = self.attributedPlaceholder{
                 let attributes = realAttributedPlaceholder.attributes(at: 0, longestEffectiveRange:nil, in:NSRange(location:0, length:realAttributedPlaceholder.string.count))
