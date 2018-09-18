@@ -10,7 +10,7 @@ import UIKit
 public extension UIView{
     
     @discardableResult
-    func pin(target:Any? = nil, _ targetAttribute:NSLayoutAttribute, to destination:Any? = nil, _ destinationAttribute:NSLayoutAttribute = .notAnAttribute, _ relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> (addedToView:UIView, constraint:NSLayoutConstraint){
+    func pin(target:Any? = nil, _ targetAttribute:NSLayoutConstraint.Attribute, to destination:Any? = nil, _ destinationAttribute:NSLayoutConstraint.Attribute = .notAnAttribute, _ relation:NSLayoutConstraint.Relation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, priority:UILayoutPriority = .required, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> (addedToView:UIView, constraint:NSLayoutConstraint){
         
         if automaticallySetTranslatesAutoresizingMaskIntoConstraints{
             self.translatesAutoresizingMaskIntoConstraints = false
@@ -23,6 +23,7 @@ public extension UIView{
         let constraintTarget:Any = target ?? self
         
         let constraint = NSLayoutConstraint(item: constraintTarget, attribute: targetAttribute, relatedBy: relation, toItem: destination, attribute: destinationAttribute, multiplier: multiplier, constant: constant)
+        constraint.priority = priority
         
         var constraintView:UIView = self
         
@@ -43,12 +44,12 @@ public extension UIView{
     }
     
     @discardableResult
-    func pinInSuperview(_ attrubutes:[NSLayoutAttribute], relation:NSLayoutRelation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> [NSLayoutAttribute : NSLayoutConstraint]{
+    func pinInSuperview(_ attrubutes:[NSLayoutConstraint.Attribute], relation:NSLayoutConstraint.Relation = .equal, multiplier:CGFloat = 1.0, constant:CGFloat = 0.0, priority:UILayoutPriority = .required, automaticallySetTranslatesAutoresizingMaskIntoConstraints:Bool = true) -> [NSLayoutConstraint.Attribute : NSLayoutConstraint]{
         if PinCushion.debugOptions.contains(.warnViewHasNoSuperview) && self.superview == nil{
             print("Warning: attempt to pin view to its superview when superview is nil, some constraints may not be added.")
         }
         
-        var constraints = [NSLayoutAttribute : NSLayoutConstraint]()
+        var constraints = [NSLayoutConstraint.Attribute : NSLayoutConstraint]()
         
         for attrubute in attrubutes{
             switch attrubute{
@@ -64,11 +65,11 @@ public extension UIView{
                 let debugOptions = PinCushion.debugOptions
                 PinCushion.debugOptions = []
                 
-                constraints[attrubute] =  self.superview?.pin(attrubute, to: self, attrubute, relation, multiplier: multiplier, constant: constant, automaticallySetTranslatesAutoresizingMaskIntoConstraints:false).constraint
+                constraints[attrubute] =  self.superview?.pin(attrubute, to: self, attrubute, relation, multiplier: multiplier, constant: constant, priority:priority, automaticallySetTranslatesAutoresizingMaskIntoConstraints:false).constraint
                 
                 PinCushion.debugOptions = debugOptions
             default:
-                constraints[attrubute] =  self.pin(attrubute, to: self.superview, attrubute, relation, multiplier: multiplier, constant: constant, automaticallySetTranslatesAutoresizingMaskIntoConstraints:
+                constraints[attrubute] =  self.pin(attrubute, to: self.superview, attrubute, relation, multiplier: multiplier, constant: constant, priority:priority, automaticallySetTranslatesAutoresizingMaskIntoConstraints:
                     automaticallySetTranslatesAutoresizingMaskIntoConstraints).constraint
             }
         }
@@ -79,10 +80,18 @@ public extension UIView{
 
 extension UIView{
     func commonSuperviewWith(_ view:UIView) -> UIView?{
-        let myHierachy = Set(self.viewHierarchy())
-        let viewHierarchy = Set(view.viewHierarchy())
+        let myHierachy = self.viewHierarchy().reversed()
+        let viewHierarchy = view.viewHierarchy().reversed()
         
-        return myHierachy.intersection(viewHierarchy).first
+        for myView in myHierachy{
+            for view in viewHierarchy{
+                if myView == view{
+                    return view
+                }
+            }
+        }
+        
+        return nil
     }
     
     func viewHierarchy() -> [UIView]{

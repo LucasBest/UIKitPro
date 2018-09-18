@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-GenAPI is built with Swift 4 and targets iOS 8 and later.
+GenAPI is built with Swift 4.2 and targets iOS 8 and later.
 
 ## Installation
 

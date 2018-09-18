@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitPro'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'UIKitPro is a small set of UIKit additions and extensions to supplement the development of UIKit apps.'
 
 # This description is used to generate tags and improve search results.

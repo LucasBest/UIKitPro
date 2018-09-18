@@ -1,19 +1,23 @@
 PODS:
-  - PinCushion (1.0.1)
-  - UIKitPro (0.3.0):
+  - PinCushion (1.1.0)
+  - UIKitPro (0.4.2):
     - PinCushion
 
 DEPENDENCIES:
   - UIKitPro (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PinCushion
+
 EXTERNAL SOURCES:
   UIKitPro:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  PinCushion: e40c471ed7d7172421f212613ba0333e36a612da
-  UIKitPro: 8660b7b3171beb980fc27ed8580c25323786a169
+  PinCushion: 89f9df5566951b4740ab8b9992efeddf5382f895
+  UIKitPro: e4cc2b1b8e01b6a6043ad9cce63e7c3d7833ecd9
 
 PODFILE CHECKSUM: 932cdf752ab040e44d2eec456ef7a838f4532476
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
