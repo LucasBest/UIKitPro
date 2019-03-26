@@ -11,8 +11,8 @@ import UIKit
 class ViewController2: UIViewController {
 
     // MARK: - Actions
-    
-    @IBAction private func goBack(_ sender:UIButton){
+
+    @IBAction private func goBack(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toViewController1", sender: nil)
     }
 }

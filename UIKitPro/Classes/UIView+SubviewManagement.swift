@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIView{
-    public func removeAllSubviews(){
-        for subview in self.subviews{
+extension UIView {
+    public func removeAllSubviews() {
+        for subview in self.subviews {
             subview.removeFromSuperview()
         }
     }

@@ -12,9 +12,8 @@ import UIKitPro
 class ViewController1: UIViewController {
 
     // MARK: - Actions
-    
-    @IBAction private func toViewController2(_ sender:UIButton){
+
+    @IBAction private func toViewController2(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toViewController2", sender: nil)
     }
 }
-

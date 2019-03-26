@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIViewController{
-    @IBAction open func tapOut(_ sender:Any){
+extension UIViewController {
+    @IBAction open func tapOut(_ sender: Any) {
         self.view.endEditing(true)
     }
 }

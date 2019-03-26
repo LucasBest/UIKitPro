@@ -8,10 +8,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-GenAPI is built with Swift 4.2 and targets iOS 8 and later.
-
 ## Installation
 
 UIKitPro is available through [CocoaPods](http://cocoapods.org). To install

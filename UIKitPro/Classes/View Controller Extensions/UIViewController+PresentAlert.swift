@@ -7,19 +7,19 @@
 
 import UIKit
 
-public extension UIViewController{
-    public func presentAlert(title:String?, message:String?, actions:[UIAlertAction] = []){
+public extension UIViewController {
+    func presentAlert(title: String?, message: String?, actions: [UIAlertAction] = []) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        for action in actions{
+
+        for action in actions {
             alertController.addAction(action)
         }
-        
-        if actions.count == 0{
+
+        if actions.count == 0 {
             let okAction = UIAlertAction(title: "OK", style: .default)
             alertController.addAction(okAction)
         }
-        
-        self.present(alertController, animated:true)
+
+        self.present(alertController, animated: true)
     }
 }
