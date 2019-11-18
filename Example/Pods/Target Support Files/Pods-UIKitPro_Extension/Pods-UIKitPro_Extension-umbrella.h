@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PinCushionVersionNumber;
-FOUNDATION_EXPORT const unsigned char PinCushionVersionString[];
+FOUNDATION_EXPORT double Pods_UIKitPro_ExtensionVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_UIKitPro_ExtensionVersionString[];
 

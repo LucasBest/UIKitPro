@@ -6,16 +6,15 @@
 //
 
 import UIKit
-import PinCushion
 
-public extension UIWindow {
-    func setRootViewController(_ rootViewController: UIViewController, animated: Bool = true) {
+extension UIWindow {
+    public func setRootViewController(_ rootViewController: UIViewController, animated: Bool = true) {
         if animated {
             let snapshot = self.snapshotView(afterScreenUpdates: true)
 
-            if let realSnapShot = snapshot {
-                rootViewController.view.addSubview(realSnapShot)
-                realSnapShot.pinInSuperview([.leading, .top, .trailing, .bottom])
+            if let realSnapshot = snapshot {
+                rootViewController.view.addSubview(realSnapshot)
+                realSnapshot.constrainInSuperview()
             }
 
             self.rootViewController = rootViewController

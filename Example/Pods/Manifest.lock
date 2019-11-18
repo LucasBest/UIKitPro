@@ -1,8 +1,6 @@
 PODS:
-  - PinCushion (1.2.0)
   - SwiftLint (0.31.0)
-  - UIKitPro (0.5.0):
-    - PinCushion
+  - UIKitPro (0.5.0)
 
 DEPENDENCIES:
   - SwiftLint
@@ -10,7 +8,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - PinCushion
     - SwiftLint
 
 EXTERNAL SOURCES:
@@ -18,10 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PinCushion: a1052a590da234bbbaa7ec465dca923a2cc4417d
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
-  UIKitPro: fe2a26b27fdc2a0901b5cf995cde03d2d9ce1865
+  UIKitPro: 8437ac4fdad7724c87bbae02fd56c85bb941ddfd
 
-PODFILE CHECKSUM: 8d8bdf3350fd7b17c6c9eab2a7d6fc4062aabf37
+PODFILE CHECKSUM: a02f072533120a71e2554afe101966fc969d2874
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.7.5

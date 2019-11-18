@@ -10,3 +10,8 @@ target 'UIKitPro_Example' do
     inherit! :search_paths
   end
 end
+
+target 'UIKitPro_Extension' do
+  pod 'UIKitPro', :path => '../'
+end
+

@@ -22,9 +22,5 @@
   },
   "source_files": "UIKitPro/Classes/**/*",
   "frameworks": "UIKit",
-  "dependencies": {
-    "PinCushion": [
-
-    ]
-  }
+  "swift_version": "5.0"
 }

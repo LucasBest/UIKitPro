@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'UIKitPro'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'UIKitPro is a small set of UIKit additions and extensions to supplement the development of UIKit apps.'
 
   s.description      = <<-DESC
@@ -19,5 +19,4 @@ Pod::Spec.new do |s|
   s.source_files = 'UIKitPro/Classes/**/*'
 
   s.frameworks = 'UIKit'
-  s.dependency 'PinCushion'
 end

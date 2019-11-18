@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,77 +19,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bev-rv-zFX">
-                                <rect key="frame" x="122.5" y="323" width="129" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZo-ex-6mc">
-                                <rect key="frame" x="130" y="444" width="114" height="30"/>
-                                <state key="normal" title="ViewController 2"/>
-                                <connections>
-                                    <action selector="toViewController2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jb1-Wn-S7J"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPa-FD-CqZ">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-Et-iaR">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="2fX-eW-rk4"/>
+                                            <constraint firstAttribute="height" constant="128" id="b7h-Yv-bSw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s9g-Et-iaR" firstAttribute="leading" secondItem="dPa-FD-CqZ" secondAttribute="leading" id="BCm-JF-Tzt"/>
+                                    <constraint firstItem="s9g-Et-iaR" firstAttribute="top" secondItem="dPa-FD-CqZ" secondAttribute="top" id="Bse-ji-wVc"/>
+                                    <constraint firstAttribute="bottom" secondItem="s9g-Et-iaR" secondAttribute="bottom" id="pGm-kC-fE8"/>
+                                    <constraint firstAttribute="trailing" secondItem="s9g-Et-iaR" secondAttribute="trailing" id="qq2-Sa-wtK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bev-rv-zFX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0tF-kT-OSk"/>
-                            <constraint firstItem="Bev-rv-zFX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Mrl-fA-bZ6"/>
-                            <constraint firstItem="FZo-ex-6mc" firstAttribute="top" secondItem="Bev-rv-zFX" secondAttribute="bottom" constant="100" id="dS2-GG-zNl"/>
-                            <constraint firstItem="FZo-ex-6mc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dvE-XN-SVC"/>
+                            <constraint firstItem="dPa-FD-CqZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="eiW-Uc-XYZ"/>
+                            <constraint firstItem="dPa-FD-CqZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tW9-vf-tF3"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="076-yp-o3z" kind="custom" identifier="toViewController2" customClass="RootViewControllerAnimatedSegue" customModule="UIKitPro" id="CdN-T5-lMJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="29"/>
-        </scene>
-        <!--View Controller2-->
-        <scene sceneID="DT6-nD-RMv">
-            <objects>
-                <viewController id="076-yp-o3z" customClass="ViewController2" customModule="UIKitPro_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Lhv-cw-6hI"/>
-                        <viewControllerLayoutGuide type="bottom" id="nD7-mE-8EX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="weH-JQ-g42">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYb-5C-e9c">
-                                <rect key="frame" x="121.5" y="223" width="131.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQV-74-UDh">
-                                <rect key="frame" x="131" y="344" width="112" height="30"/>
-                                <state key="normal" title="ViewController 1"/>
-                                <connections>
-                                    <action selector="goBack:" destination="076-yp-o3z" eventType="touchUpInside" id="L8Z-x0-oMn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.35351653690000001" blue="0.24474059270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="HQV-74-UDh" firstAttribute="centerX" secondItem="weH-JQ-g42" secondAttribute="centerX" id="ZKr-Et-I2a"/>
-                            <constraint firstItem="mYb-5C-e9c" firstAttribute="centerX" secondItem="weH-JQ-g42" secondAttribute="centerX" id="fFA-YV-dmF"/>
-                            <constraint firstItem="mYb-5C-e9c" firstAttribute="centerY" secondItem="weH-JQ-g42" secondAttribute="centerY" multiplier="0.7" id="sbW-EV-0ke"/>
-                            <constraint firstItem="HQV-74-UDh" firstAttribute="top" secondItem="mYb-5C-e9c" secondAttribute="bottom" constant="100" id="smc-23-6fm"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="toViewController1" customClass="RootViewControllerAnimatedSegue" customModule="UIKitPro" id="A42-VS-OFz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P7d-9o-uBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1137" y="30"/>
         </scene>
     </scenes>
 </document>
