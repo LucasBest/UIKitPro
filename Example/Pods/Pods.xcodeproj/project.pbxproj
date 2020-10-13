@@ -32,6 +32,7 @@
 		6888BED531DF0B35C665705ECB40BDBB /* Pods-UIKitPro_Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E712DEDBEE54FBB03D2044B668DE61FB /* Pods-UIKitPro_Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82EFF50E1601CCB378EC13E7C0838713 /* Pods-UIKitPro_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8EEE2CB7D47020A8E39022E58DD2CD1 /* Pods-UIKitPro_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A38D456786DFDE6C9B325E387365769 /* UIKitPro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2259D71E5EB277EEC922D9775BF05CDA /* UIKitPro-dummy.m */; };
+		9C88A9BB2535F0F300F89642 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C88A9BA2535F0F300F89642 /* GradientView.swift */; };
 		9CC1B2222382E584004FBEFA /* UIWindow+AnimateRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B2212382E580004FBEFA /* UIWindow+AnimateRootViewController.swift */; };
 		A6CC2602CCFB0AED96FF1302B04EB87D /* Pods-UIKitPro_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E90AEF500CFA014C7E1F249977AD48 /* Pods-UIKitPro_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3A057F5B7FC466D68593B8520C95B7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
@@ -97,7 +98,7 @@
 		38B9B5ED8F58779F83179048D5009F62 /* UIKitPro-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPro-prefix.pch"; sourceTree = "<group>"; };
 		3B0C3F00B710B391D19C743233802069 /* Pods-UIKitPro_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitPro_Tests-dummy.m"; sourceTree = "<group>"; };
 		3D50E09800F56A160BC8529986A02CA4 /* Pods-UIKitPro_Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitPro_Extension-dummy.m"; sourceTree = "<group>"; };
-		3E2B1CFC1DB38D0152FA664627E77C77 /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
+		3E2B1CFC1DB38D0152FA664627E77C77 /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PresentAlert.swift"; path = "UIKitPro/Classes/UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4677A736219884B4AE874B72DE666185 /* Pods-UIKitPro_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIKitPro_Example.modulemap"; sourceTree = "<group>"; };
 		4FB508107EA0DBECE42E9EFC40FD90BA /* Pods-UIKitPro_Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Extension-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -105,7 +106,7 @@
 		6319AB06328D1F2A7F3E86CF86EBF23F /* Pods-UIKitPro_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Tests-Info.plist"; sourceTree = "<group>"; };
 		638BA0398520C5705CD6FB838E414C1B /* Pods-UIKitPro_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6B6F80A4C9CDC328680F19D49AB17FDF /* Pods-UIKitPro_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPro_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6F86997663F6C95E932920598A082581 /* UIViewController+TapOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+TapOut.swift"; sourceTree = "<group>"; };
+		6F86997663F6C95E932920598A082581 /* UIViewController+TapOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+TapOut.swift"; path = "UIKitPro/Classes/UIViewController+TapOut.swift"; sourceTree = "<group>"; };
 		72AF3B7C2DA4630717D8E4745492F336 /* Pods-UIKitPro_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKitPro_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79BCC6A3F5AF8631963153CF0F12F883 /* Pods-UIKitPro_Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIKitPro_Extension.modulemap"; sourceTree = "<group>"; };
 		7FA78BD57FEE7D408B9E7321B2587720 /* Pods-UIKitPro_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Example-Info.plist"; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		8EA6A23CA7B52AB9D1BABEEE02F52D42 /* Pods-UIKitPro_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitPro_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		976BFE36BF0D166E218C1BB22FA2A72A /* UIKitPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		994BFE720526AA66C1FAF06A061E33D9 /* Pods-UIKitPro_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitPro_Example-dummy.m"; sourceTree = "<group>"; };
+		9C88A9BA2535F0F300F89642 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = UIKitPro/Classes/GradientView.swift; sourceTree = "<group>"; };
 		9CC1B2212382E580004FBEFA /* UIWindow+AnimateRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+AnimateRootViewController.swift"; path = "UIKitPro/Classes/UIWindow+AnimateRootViewController.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A570F90E9D7FD694224E4DC980B304F7 /* Pods-UIKitPro_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKitPro_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -180,14 +182,10 @@
 		1B9C89D2A6F59544A75A3020EDE4F6D5 /* UIKitPro */ = {
 			isa = PBXGroup;
 			children = (
-				253DF7D6C913A5976A9A839473F95C0F /* UIImage+Color.swift */,
-				0ABC87F5DB266CDD582D64BB02864657 /* UISearchBar+TextField.swift */,
-				DE877F67E0884617DB174375B39D6B82 /* UIView+LayerStyle.swift */,
-				2B611C56C5BF83A05C7FB4327D066F3C /* UIView+SubviewManagement.swift */,
-				9CC1B2212382E580004FBEFA /* UIWindow+AnimateRootViewController.swift */,
+				9C2D06DC2535E7560048DE49 /* Extensions */,
+				9C88A9B92535F0D200F89642 /* Views */,
 				52C8807A695D1AEF51E725407AD5C56B /* Pod */,
 				96857A205A2F349573D828B12878B194 /* Support Files */,
-				4A7527A9E6A75F763A846582FEF8CED9 /* View Controller Extensions */,
 			);
 			name = UIKitPro;
 			path = ../..;
@@ -209,16 +207,6 @@
 				6357AAC05E8851963D94D4ED98B36CEB /* Pods-UIKitPro_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4A7527A9E6A75F763A846582FEF8CED9 /* View Controller Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				3E2B1CFC1DB38D0152FA664627E77C77 /* UIViewController+PresentAlert.swift */,
-				6F86997663F6C95E932920598A082581 /* UIViewController+TapOut.swift */,
-			);
-			name = "View Controller Extensions";
-			path = "UIKitPro/Classes/View Controller Extensions";
 			sourceTree = "<group>";
 		};
 		52C8807A695D1AEF51E725407AD5C56B /* Pod */ = {
@@ -308,6 +296,36 @@
 				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
 			);
 			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		9C2D06DC2535E7560048DE49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				253DF7D6C913A5976A9A839473F95C0F /* UIImage+Color.swift */,
+				0ABC87F5DB266CDD582D64BB02864657 /* UISearchBar+TextField.swift */,
+				DE877F67E0884617DB174375B39D6B82 /* UIView+LayerStyle.swift */,
+				2B611C56C5BF83A05C7FB4327D066F3C /* UIView+SubviewManagement.swift */,
+				9CC1B2212382E580004FBEFA /* UIWindow+AnimateRootViewController.swift */,
+				9C88A9B32535F03E00F89642 /* View Controllers */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9C88A9B32535F03E00F89642 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B1CFC1DB38D0152FA664627E77C77 /* UIViewController+PresentAlert.swift */,
+				6F86997663F6C95E932920598A082581 /* UIViewController+TapOut.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9C88A9B92535F0D200F89642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C88A9BA2535F0F300F89642 /* GradientView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		AA56B15C7644ADB3613741DD383BF2C4 /* Products */ = {
@@ -473,7 +491,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -481,6 +499,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = AA56B15C7644ADB3613741DD383BF2C4 /* Products */;
@@ -548,6 +567,7 @@
 				C8763FE0D84C35F21D1D8C3B0EDC43EE /* UIViewController+PresentAlert.swift in Sources */,
 				9CC1B2222382E584004FBEFA /* UIWindow+AnimateRootViewController.swift in Sources */,
 				500863ED254822908AC88FAA5E448B73 /* UIViewController+TapOut.swift in Sources */,
+				9C88A9BB2535F0F300F89642 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +641,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIKitPro/UIKitPro-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIKitPro/UIKitPro-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIKitPro/UIKitPro.modulemap";
 				PRODUCT_MODULE_NAME = UIKitPro;
@@ -662,6 +682,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -687,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -717,7 +738,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Tests/Pods-UIKitPro_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Tests/Pods-UIKitPro_Tests.modulemap";
@@ -752,7 +773,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Extension/Pods-UIKitPro_Extension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Extension/Pods-UIKitPro_Extension.modulemap";
@@ -787,7 +808,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Tests/Pods-UIKitPro_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Tests/Pods-UIKitPro_Tests.modulemap";
@@ -823,7 +844,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Extension/Pods-UIKitPro_Extension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Extension/Pods-UIKitPro_Extension.modulemap";
@@ -866,6 +887,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -888,7 +910,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -917,7 +939,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIKitPro/UIKitPro-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIKitPro/UIKitPro-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIKitPro/UIKitPro.modulemap";
 				PRODUCT_MODULE_NAME = UIKitPro;
@@ -940,7 +962,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -964,7 +986,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Example/Pods-UIKitPro_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Example/Pods-UIKitPro_Example.modulemap";
@@ -988,7 +1010,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1013,7 +1035,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitPro_Example/Pods-UIKitPro_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitPro_Example/Pods-UIKitPro_Example.modulemap";

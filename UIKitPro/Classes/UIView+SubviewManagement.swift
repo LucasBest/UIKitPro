@@ -7,14 +7,14 @@
 
 import UIKit
 
-extension UIView {
-    public func removeAllSubviews() {
+public extension UIView {
+    func removeAllSubviews() {
         for subview in self.subviews {
             subview.removeFromSuperview()
         }
     }
 
-    public func constrainInSuperview() {
+    func constrainInSuperview() {
         guard let superview = self.superview else {
             return
         }
