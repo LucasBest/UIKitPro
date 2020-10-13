@@ -18,18 +18,18 @@ public class GradientView: UIView {
             self.gradientLayer.startPoint = start
         }
     }
-    @IBInspectable var end: CGPoint = CGPoint(x: 1, y: 1) {
+    @IBInspectable public var end: CGPoint = CGPoint(x: 1, y: 1) {
         didSet {
             self.gradientLayer.endPoint = end
         }
     }
 
-    @IBInspectable var startColor: UIColor = .white {
+    @IBInspectable public var startColor: UIColor = .white {
         didSet {
             self.setColors()
         }
     }
-    @IBInspectable var endColor: UIColor = .black {
+    @IBInspectable public var endColor: UIColor = .black {
         didSet {
             self.setColors()
         }

@@ -1,6 +1,6 @@
 PODS:
-  - SwiftLint (0.31.0)
-  - UIKitPro (0.5.0)
+  - SwiftLint (0.40.3)
+  - UIKitPro (0.7.1)
 
 DEPENDENCIES:
   - SwiftLint
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
-  UIKitPro: 8437ac4fdad7724c87bbae02fd56c85bb941ddfd
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  UIKitPro: 15d44ba974429b6201225f2bfb35b2b2e247e302
 
 PODFILE CHECKSUM: a02f072533120a71e2554afe101966fc969d2874
 
